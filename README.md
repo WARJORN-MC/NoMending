@@ -1,55 +1,36 @@
-# NoMending Plugin (1.21.4)
+# NoMending Plugin (v1.1.0)
 
-![Minecraft Version](https://img.shields.io/badge/Minecraft-1.21.4-brightgreen)
-![Version](https://img.shields.io/badge/Version-1.0.1--BETA-yellow)
+![Minecraft](https://img.shields.io/badge/Minecraft-1.21.4-brightgreen)
+![Version](https://img.shields.io/badge/Version-1.1.0-blue)
+![License](https://img.shields.io/badge/License-MIT-green)
 
-A lightweight Spigot plugin that completely disables the Mending enchantment on your Minecraft server.
+A Spigot plugin that completely disables the Mending enchantment with additional tools to clean existing items.
 
-## Features
-
-- **Blocks Mending application** through all methods:
+## ✨ Features
+- **Blocks Mending** in all forms:
   - Enchanting tables
   - Anvil combinations
   - Enchanted books
-- **Version compatible**: Specifically designed for Minecraft 1.21.4
-- **Lightweight**: Minimal performance impact
-- **Configurable**: (Future update) Enable/disable logging
+- **New Command**:
+  ```/clearmending [player]``` - Remove Mending from inventories
+- **Permission System**:
+  - `nomending.clean` - Self-clearing
+  - `nomending.clean.others` - Admin clearing
+- **Zero Performance Impact**
 
-## Installation
+## 🛠️ Installation
+1. Download `NoMending-1.1.0.jar` from [Releases](#)
+2. Place in your server's `plugins/` folder
+3. Restart the server
 
-1. Download the latest `NoMending-1.0.1-BETA.jar` from releases
-2. Place the JAR file in your server's `plugins/` folder
-3. Restart your server
+## 📋 Commands
+| Command | Description | Permission |
+|---------|-------------|------------|
+| `/clearmending` | Clear your own inventory | `nomending.clean` |
+| `/clearmending <player>` | Clear another player's inventory | `nomending.clean.others` |
 
-## Commands
-
-Currently no commands available (planned for future updates)
-
-## Permissions
-
-Currently no permissions required (planned for future updates)
-
-## How It Works
-
-The plugin:
-1. Listens for enchantment events and removes Mending if applied
-2. Intercepts anvil operations to prevent Mending combinations
-3. Handles enchanted books properly
-
-## Planned Features
-
-- [ ] Command to scan and remove existing Mending items
-- [ ] Configuration file for options
-- [ ] Villager trade protection
-- [ ] Logging toggle
-
-## Support
-
-Version: 1.0.1-BETA  
-Minecraft: 1.21.4  
-Author: RodneyWJ  
-Issue tracker: [GitHub Issues](#)
-
-## License
-
-This project is licensed under MIT License.
+## ⚙️ Config (v1.1.0)
+```yaml
+# config.yml
+log-actions: true  # Log clearing actions to console
+broadcast-clears: false  # Announce when players' items are cleared
