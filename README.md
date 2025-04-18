@@ -4,6 +4,7 @@
 ![Version](https://img.shields.io/badge/Version-1.1.0-blue)
 ![License](https://img.shields.io/badge/License-MIT-green)
 
+[Spigot Page](https://www.spigotmc.org/resources/warjorns-nomending.124182/)
 A Spigot plugin that completely disables the Mending enchantment with additional tools to clean existing items.
 
 ## ✨ Features
