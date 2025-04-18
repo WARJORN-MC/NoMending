@@ -1,0 +1,4 @@
+name: NoMending
+version: '1.0.1-BETA'
+main: com.warjorn.nomending.NoMendingPlugin
+api-version: '1.21'
