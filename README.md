@@ -47,7 +47,7 @@ The plugin:
 
 Version: 1.0.1-BETA  
 Minecraft: 1.21.4  
-Author: YourName  
+Author: RodneyWJ  
 Issue tracker: [GitHub Issues](#)
 
 ## License
