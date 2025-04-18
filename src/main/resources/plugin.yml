@@ -1,4 +1,17 @@
 name: NoMending
-version: '1.0.1-BETA'
+version: '1.1.0'
 main: com.warjorn.nomending.NoMendingPlugin
 api-version: '1.21'
+description: Disables Mending enchantment and provides cleanup tools
+commands:
+  clearmending:
+    description: Remove Mending from items
+    usage: /clearmending [player]
+    permission: nomending.clean
+permissions:
+  nomending.clean:
+    description: Allows using /clearmending on yourself
+    default: op
+  nomending.clean.others:
+    description: Allows using /clearmending on others
+    default: op
